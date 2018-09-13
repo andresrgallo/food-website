@@ -1,0 +1,218 @@
+* {
+  margin: 0; 
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #555;
+  background-color: #fff;
+  line-height: 1.15;
+  text-rendering: optimizeLegibility;
+}
+
+.row {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/hero.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-text{
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  width: 1140px;
+  transform: translate(-50%, -50%)
+}
+
+.hero-text h1 {
+  font-size: 240%;
+  word-spacing: 4px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 300;
+}
+
+.btn:link, 
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  border: 1px solid orange;
+  border-radius: 200px;
+  transition: background-color 0.5s;
+}
+
+.btn:hover, 
+.btn:active {
+  border: 1px solid orange;
+  border-radius: 200px;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: orange;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  background-color: #bd7c03
+}
+
+.btn-ghost:link,
+.btn-ghost:active {
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+  background-color: #bd7c03;
+  color: #fff;
+}
+
+.hero-text a {
+  text-decoration: none;
+  color: orange;
+  font-size: 110%;
+}
+
+.logo {
+  height: 100px;
+  float: left;
+}
+
+.nav-options {
+  float: right;
+  margin-top: 40px;
+}
+
+.nav-options li {
+  display: inline-block;
+  list-style: none;
+}
+
+.nav-options a:link,
+.nav-options a:visited {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  margin-left: 20px;
+  padding-bottom: 10px;
+  font-size: 90%;
+}
+
+.nav-options a:hover,
+.nav-options a:active {
+  border-bottom: 2px solid orange;
+}
+
+.nav-bar {
+  margin-top: 15px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.features h2{
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+  font-size: 150%;
+  font-weight: 300;
+}
+
+.features h2:after {
+  content:" ";
+  width: 100px;
+  height: 2px;
+  background-color: orange;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: block;
+}
+
+.feature-main {
+  width: 70%;
+  margin-left: 15%;
+  line-height: 145%;
+  margin-bottom: 40px;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.box {
+  font-size: 90%;
+}
+
+ion-icon { 
+  font-size: 300%;
+  color: orange;
+}
+
+.box p {
+  width: 90%;
+}
+
+.food-section {
+  padding: 0;
+  overflow: hidden;
+}
+
+.meal-pics {
+  list-style: none;  
+  overflow: hidden;
+}
+
+.meal-pics li {
+  width: 25%;
+  float: left;
+  display: block;
+}
+
+.meal-photo {
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.meal-photo img {
+  opacity: 0.7;
+  transform: scale(1.15);
+  width: 100%;
+  height: auto;
+  transition: opacity 0.5s, transform 1.5s;
+}
+
+.meal-photo img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+.btn-test {
+  text-decoration: none;
+  background-color: orange;
+  color: #fff;
+  border: 1px solid orange;
+}
+
+.btn-test:hover {
+  background-color: green;
+  color: #fff;
+  border: 1px solid transparent;
+}
