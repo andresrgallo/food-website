@@ -14,6 +14,15 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom: 1}
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
 .row {
   width: 1140px;
   margin: 0 auto;
@@ -124,7 +133,7 @@ section {
   padding: 80px 0;
 }
 
-.features h2{
+h2{
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 40px;
@@ -132,7 +141,7 @@ section {
   font-weight: 300;
 }
 
-.features h2:after {
+h2:after {
   content:" ";
   width: 100px;
   height: 2px;
@@ -171,12 +180,10 @@ ion-icon {
 
 .food-section {
   padding: 0;
-  overflow: hidden;
 }
 
 .meal-pics {
   list-style: none;  
-  overflow: hidden;
 }
 
 .meal-pics li {
@@ -187,8 +194,8 @@ ion-icon {
 
 .meal-photo {
   margin: 0;
-  overflow: hidden;
   background-color: black;
+  overflow: hidden;
 }
 
 .meal-photo img {
@@ -204,15 +211,55 @@ ion-icon {
   transform: scale(1.03);
 }
 
-.btn-test {
-  text-decoration: none;
-  background-color: orange;
-  color: #fff;
-  border: 1px solid orange;
+/*----- How it works -----*/  
+
+.section-steps {
+  background-color: #f4f4f4;
 }
 
-.btn-test:hover {
-  background-color: green;
-  color: #fff;
-  border: 1px solid transparent;
+.steps-box {
+  margin-top: 30px;
+}
+
+.app-screen {
+  width: 40%;
+}
+
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+
+.steps-box:last-child {
+  padding-left: 3%;
+  margin-top: 70px;
+}
+
+.works-steps div {
+  color: orange;
+  border: 2px solid orange;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  padding: 5px;
+  margin-right: 25px;
+  font-size: 150%;
+}
+
+.works-steps {
+  margin-bottom: 50px;
+}
+
+.works-steps:last-of-type {
+  margin-bottom: 80px;
+}
+
+.download-img img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
 }
