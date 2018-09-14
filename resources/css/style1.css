@@ -115,7 +115,7 @@ h2:after {
 
 /* --Icons-- */
 
-ion-icon {
+.icon-big {
   font-size: 64px;
   color: #ff9f43;
   display: block;
@@ -281,3 +281,40 @@ ion-icon {
   width: auto;
   margin-right: 10px;
 }
+
+/*----- Cities -----*/
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.icon-small {
+  font-size: 120%;
+  color: orange;
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-right: 10px;
+}
+
+.city-feature {
+  margin-bottom: 5px;
+}
+
+.city-feature a:link,
+.city-feature a:visited {
+  text-decoration: none;
+  color: orange;
+  border-bottom: 1px solid orange;
+  padding-bottom: 1px;
+  transition: border-bottom 0.5s, color: 0.5s;
+}
+
+.city-feature a:hover,
+.city-feature a:active {
+  border-bottom: 1px solid transparent;
+  color: #555;
+}
+
