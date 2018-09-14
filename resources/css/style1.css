@@ -1,6 +1,4 @@
-/*-------------------------------------------------------------------------------- */
-General Setup
-/*-------------------------------------------------------------------------------- */
+/* -----  General Setup ----- */ 
 
 * {
   margin: 0;
@@ -14,12 +12,21 @@ html {
   font-size: 20px;
   font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
-  text-rendering: optimizeLegebility;
+  text-rendering: optimizeLegibility;
 }
 
-/*-------------------------------------------------------------------------------- */
+.clearfix {zoom: 1}
+.clearfix:after {
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+/* -------------------------------------------------------------------------------- */
 /* --Reusable Components-- */
-/*-------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
 .row {
   width: 1140px;
   margin: 0 auto;
@@ -190,7 +197,7 @@ ion-icon {
   border-bottom: 2px solid #ff8510;
 }
 
-/* Meals */
+/*----- Meals -----*/
 
 .food-section {
   padding: 0;
@@ -198,16 +205,15 @@ ion-icon {
 
 .meals-pics {
   list-style: none;
-  width: 100%;
 }
 
 .meals-pics li {
   width: 25%;
   float: left;
+  display: block;
 }
 
 .meal-photo {
-  width:100%;
   margin: 0;
   overflow: hidden;
   background-color: #000;
@@ -224,4 +230,54 @@ ion-icon {
 .meals-pics img:hover {
   transform: scale(1.03);
   opacity: 1;
+}
+
+
+/*----- How it works -----*/
+
+.section-works {
+  background-color: #f4f4f4;
+}
+
+.phone-img {
+  width: 40%;
+}
+
+.work-box:first-child {
+  padding-right: 3%;
+  text-align: right;
+  margin-top: 30px;
+}
+
+.work-box:last-child {
+  padding-left: 3%;
+  margin-top: 70px;
+} 
+
+.steps div {
+  display: inline-block;
+  float: left;
+  color: orange;
+  border: 2px solid orange;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  padding: 5px;
+  text-align: center;
+  font-size: 150%;
+  margin-right: 20px;
+}
+
+.steps{
+  margin-bottom: 50px;
+}
+
+.steps:last-of-type {
+  margin-bottom: 80px;
+}
+
+.app-link img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
 }

@@ -28,6 +28,7 @@ html {
   margin: 0 auto;
 }
 
+
 header {
   background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/hero.jpg);
   height: 100vh;
@@ -110,18 +111,19 @@ header {
   list-style: none;
 }
 
-.nav-options a:link,
-.nav-options a:visited {
+.nav-option:link,
+.nav-option:visited {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
   margin-left: 20px;
   padding-bottom: 10px;
   font-size: 90%;
+  border: 0;
 }
 
-.nav-options a:hover,
-.nav-options a:active {
+.nav-option:hover,
+.nav-option:active {
   border-bottom: 2px solid orange;
 }
 
@@ -169,9 +171,11 @@ h3 {
   font-size: 90%;
 }
 
-ion-icon { 
-  font-size: 300%;
+.icon-big { 
+  font-size: 350%;
   color: orange;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .box p {
@@ -263,3 +267,56 @@ ion-icon {
   width: auto;
   margin-right: 10px;
 }
+
+.download-img:link,
+.download-img:visited {
+  border: 0;
+}
+
+/* ----- Links ----- */
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: orange;
+  padding-bottom: 1px;
+  border-bottom: 1px solid orange;
+  transition: color 0.2s, border-bottom 0.2s
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+}
+
+/*----- Where we are -----*/  
+
+.box ul{
+  list-style: none;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.icon-small {
+  color: orange;
+  width: 30px;
+  font-size: 120%;
+  display: inline-block;
+  margin-right: 5px;
+  text-align: center;
+  /* secret align icons with text */
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -4px;
+}
+
+.city-feature {
+  margin-bottom: 5px;
+}
+
+
