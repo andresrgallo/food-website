@@ -24,7 +24,7 @@ html {
 }
 
 .row {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -55,7 +55,8 @@ header {
 }
 
 .btn:link, 
-.btn:visited {
+.btn:visited,
+input[type=submit] {
   display: inline-block;
   padding: 10px 30px;
   border: 1px solid orange;
@@ -65,13 +66,15 @@ header {
 }
 
 .btn:hover, 
-.btn:active {
+.btn:active, 
+input[type=submit] {
   border: 1px solid orange;
-  border-radius: 200px;
+  background-color: #bd7c03;
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
   background-color: orange;
   color: #fff;
   margin-right: 20px;
@@ -413,3 +416,26 @@ span {
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
 }
+
+
+/*----- Form -----*/  
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type="text"], input[type="email"], input[type="checkbox"] select, textarea {
+  width: 100%;
+  padding: 5px;
+}
+
+textarea {
+  height: 100px;
+}
+
+#newsletter {
+  margin: 10px 5px 10px 0;
+}
+
+*:focus {outline:none}
