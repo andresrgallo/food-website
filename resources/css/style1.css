@@ -28,7 +28,7 @@ html {
 /* --Reusable Components-- */
 /* -------------------------------------------------------------------------------- */
 .row {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -74,7 +74,7 @@ h1 {
 h2 {
   text-align: center;
   margin-bottom: 30px;
-  font-size: 180%;
+  font-size: 150%;
   word-spacing: 2px;
 }
 
@@ -127,7 +127,8 @@ h2:after {
 /* --Buttons-- */
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type="submit"] {
   display: inline-block;
   font-weight: 300;
   border-radius: 200px;
@@ -137,7 +138,8 @@ h2:after {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type="submit"] {
   background-color: #ff9f43;
   color: #fff;
   margin-right: 20px;
@@ -151,7 +153,8 @@ h2:after {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type="submit"] {
   background-color: #ff8510;
 }
 
@@ -408,4 +411,25 @@ cite img {
 .plan-box div:last-child {
   border-bottom: 0;
   text-align: center;
+}
+
+
+/*----- Form -----*/
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto; 
+}
+
+input[type='text'], input[type='email'], textarea {
+  width: 100%;
+  line-height: 145%;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type='checkbox'] {
+  margin-bottom: 15px;
 }
