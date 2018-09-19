@@ -1,0 +1,30 @@
+/* ----- Big tablets and Laptops ----- */
+@media only screen and (max-width: 1200px) {
+  .row { padding: 0 2% }
+
+  .hero-text { 
+    padding: 0 2%;
+    width: 100%;
+    }
+}
+/* ----- Small to Big tablets ----- */
+@media only screen and (max-width: 1023px) {
+  body {font-size: 18px}
+
+  .section { padding: 60px 0 }
+
+/* -----  Small tablets ----- */
+@media only screen and (max-width: 767px) {
+  .feature-main {
+  width: 90%;
+  margin-left: 5%;
+  }
+
+  .download-img img {
+    margin-right: 0;
+  }
+
+}
+/* ----- Small phones ----- */
+@media only screen and (max-width: 480px) {
+}
