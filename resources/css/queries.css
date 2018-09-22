@@ -12,6 +12,31 @@
   body {font-size: 18px}
 
   .section { padding: 60px 0 }
+  
+  .feature-main {
+  width: 80%;
+  margin-left: 10%;
+  }
+
+  .steps-box:last-child {
+    margin-top: 50px;
+}
+
+  .works-steps {
+    margin-bottom: 40px;
+  }
+
+  .app-screen {
+    width: 50%;
+  }
+  
+  .cities h3 {
+    text-align: center;
+  }
+
+  .download-img img {
+    height: 40px;
+}
 
 /* -----  Small tablets ----- */
 @media only screen and (max-width: 767px) {
