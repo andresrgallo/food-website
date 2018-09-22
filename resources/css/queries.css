@@ -11,7 +11,7 @@
 @media only screen and (max-width: 1023px) {
   body {font-size: 18px}
 
-  .section { padding: 60px 0 }
+  section { padding: 60px 0 }
   
   .feature-main {
   width: 80%;
@@ -20,7 +20,7 @@
 
   .steps-box:last-child {
     margin-top: 50px;
-}
+  }
 
   .works-steps {
     margin-bottom: 40px;
@@ -36,20 +36,74 @@
 
   .download-img img {
     height: 40px;
-}
-
-/* -----  Small tablets ----- */
-@media only screen and (max-width: 767px) {
-  .feature-main {
-  width: 90%;
-  margin-left: 5%;
   }
 
-  .download-img img {
-    margin-right: 0;
+  .plan-box {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .plan-box div p:first-of-type {
+      font-size: 250%;
+  }
+
+  .plan-box div {
+      padding: 10px;
+  }
+
+  .contact-form {
+      width: 90%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  body { font-size: 16px; }
+  section { padding: 30px 0; }
+
+  .nav-options { display: none; }  
+
+  header nav { margin-bottom: 30px; }
+
+  .row,
+  .hero-text-box { padding: 0 4%; }
+
+  .row .col { 
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+
+  .works-steps div {
+    height: 30px;
+    width: 30px;
+    font-size:120%;
+    padding: 2px;
+  }
+
+  .works-steps {
+    margin-bottom: 35px;
+  }
+
+  .works-steps p {
+    padding: 5px;
+  }
+
+  .steps-box:first-child {
+    text-align: center;
+  }
+
+  .app-screen {
+    width: 30%;
   }
 
 }
 /* ----- Small phones ----- */
 @media only screen and (max-width: 480px) {
+  .section { padding: 30px 0; }
+  .contact-form {
+      width: 100%;
+  }
+  .footer-nav {
+    margin-bottom: 20px;
+}
 }
