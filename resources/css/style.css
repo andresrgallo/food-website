@@ -120,6 +120,7 @@ input[type=submit] {
 }
 
 .nav-options {
+  display: inline-block;
   float: right;
   margin-top: 40px;
 }
@@ -148,6 +149,33 @@ input[type=submit] {
 .nav-bar {
   margin-top: 15px;
 }
+
+/* ----- Mobile Navbar ----- */
+
+.mobile-nav-menu {
+  display: none;
+  float: right;
+  margin: 30px;
+  cursor: pointer;
+}
+
+.mobile-nav-exit {
+  display: none;
+  float: right;
+  margin: 30px;
+  cursor: pointer;
+}
+
+.mobile-nav-menu ion-icon {
+  font-size: 200%;
+  color: #fff;
+}
+
+.mobile-nav-x {
+  font-size: 200%;
+  color: #fff;
+}
+
 
 /* ----- Sticky Navbar ----- */     
 
@@ -558,3 +586,9 @@ footer {
 .instagram-logo:hover {
   color: #e95950;
 }
+
+/*----------- Animations ------------*/
+/* For Features section */
+
+.js--wp-1 { opacity: 0 }
+.js--wp-1.animated { opacity: 1 }

@@ -13,21 +13,22 @@
     <nav>
       <div class="row">
         <img class="logo" src="resources/img/logo-white.png" alt="logo">
+        <img class="logo-black" src="resources/img/logo.png" alt="logo">
         <ul class="main-nav">
-          <li><a href="#">Food delivery</a></li>
-          <li><a href="#">How it works</a></li>
-          <li><a href="#">Our cities</a></li>
-          <li><a href="#">Sign up</a></li>
+          <li><a href="#features">Food delivery</a></li>
+          <li><a href="#works">How it works</a></li>
+          <li><a href="#cities">Our cities</a></li>
+          <li><a href="#plans">Sign up</a></li>
         </ul>
       </div>
     </nav>
     <div class="main-text">
       <h1>Goodbye junk food.<br>Hello super healthy meals.</h1>
-      <a href="#" class="btn btn-full">I’m hungry</a>
-      <a href="#" class="btn btn-ghost">Show me more</a>
+      <a href="#plans" class="btn btn-full">I’m hungry</a>
+      <a href="#features" class="btn btn-ghost">Show me more</a>
     </div>
   </header>
-  <section class="feature-meals">
+  <section id="features" class="feature-meals js--features">
     <div class="row">
       <h2>Get food fast &mdash; not fast food</h2>
         <p class="text-copy">
@@ -75,7 +76,7 @@
       <li><figure class="meal-photo"><img src="resources/img/8.jpg" alt="Granola with cherries and strawberries"></figure></li>
     </ul>
   </section>
-  <section class="section-works">
+  <section id="works" class="section-works">
     <div class="row">
       <h2>How it works &mdash; Simple as 1, 2, 3</h2>
     </div>
@@ -101,7 +102,7 @@
       </div>
     </div>
   </section>
-  <section class="cities">
+  <section id="cities" class="cities">
     <div class="row">
       <h2>We're currently in these cities</h2>
     </div>
@@ -196,7 +197,7 @@
         </blockquote>
     </div>
   </section>
-  <section class="section-plans">
+  <section id="plans" class="section-plans">
     <div class="row">
       <h2>Start eating healthy today</h2>
     </div>
@@ -339,6 +340,9 @@
       </div>
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
+  <script src="vendors/js/jquery.waypoints.min.js"></script>
+  <script src="resources/js/script1.js"></script>
 </body>
 </html>

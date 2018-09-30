@@ -6,6 +6,7 @@
   <link rel="stylesheet" type='text/css' href="resources/css/style.css">
   <link rel="stylesheet" type='text/css' href="resources/css/queries.css">
   <link rel="stylesheet" type='text/css' href="vendors/css/grid.css">
+  <link rel="stylesheet" type='text/css' href="vendors/css/animate.css">
   <link rel="stylesheet" type='text/css' href="vendors/css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
   <title>OmniProject</title>
@@ -18,26 +19,28 @@
         <img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo">
         <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black">
         <ul class="nav-options">
-          <li><a href="#" class="nav-option">Food delivery</a></li>
-          <li><a href="#" class="nav-option">How it works</a></li>
-          <li><a href="#" class="nav-option">Our cities</a></li>
-          <li><a href="#" class="nav-option">Sign up</a></li>
+          <li><a href="#features" class="nav-option">Food delivery</a></li>
+          <li><a href="#works" class="nav-option">How it works</a></li>
+          <li><a href="#cities" class="nav-option">Our cities</a></li>
+          <li><a href="#plans" class="nav-option">Sign up</a></li>
         </ul>
+        <a class="mobile-nav-menu"><ion-icon class='mobile-nav-icon' name="menu"></ion-icon></a>
+        <a class="mobile-nav-exit"><ion-icon class='mobile-nav-x' name="close-circle-outline"></ion-icon></a>
       </div>
     </div>
     </nav>
     <div class="hero-text">
       <h1>Goodbye junk food.<br>Hello super healthy meals.</h1>
-      <a class="btn btn-full" href="#">I’m hungry</a>
-      <a class="btn btn-ghost" href="#">Show me more</a>
+      <a class="btn btn-full" href="#features">I’m hungry</a>
+      <a class="btn btn-ghost" href="#plans">Show me more</a>
     </div>
   </header>
-  <section class="features js--features">
+  <section id="features" class="features js--features">
     <div class="row">
       <h2>Get food fast &mdash; not fast food</h2>
         <p class="feature-main">Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!</p>
     </div>
-    <div class="row">
+    <div class="row js--wp-1">
       <div class="col span-1-of-4 box">
         <ion-icon name="calendar" class="icon-big"></ion-icon>
         <h3>Up to 365 days/year</h3>
@@ -77,13 +80,13 @@
       <li><figure class="meal-photo"><img src="resources/img/8.jpg" alt="Granola with cherries and strawberries"></figure></li>
     </ul>
   </section>
-    <section class="section-steps">
+    <section id="works" class="section-steps">
       <div class="row">
         <h2>How it works &mdash; Simple as 1, 2, 3</h2>
       </div>
       <div class="row">
         <div class="col span-1-of-2 steps-box">
-          <img src="resources/img/app-iPhone.png" alt="iPhone image" class="app-screen">
+          <img src="resources/img/app-iPhone.png" alt="iPhone image" class="app-screen js--wp-2">
         </div>
         <div class="col span-1-of-2 steps-box">
           <div class="works-steps">
@@ -103,11 +106,11 @@
         </div>
       </div>
     </section>
-    <section class="cities">
+    <section id="cities" class="cities">
       <div class="row">
         <h2>We're currently in these cities</h2>
       </div>
-      <div class="row">
+      <div class="row js--wp-4">
         <div class="col span-1-of-4 box">
           <img src="resources/img/lisbon-3.jpg" alt="Lisbon">
           <h3>Lisbon</h3>
@@ -198,12 +201,12 @@
         </div>
       </div>
     </section>
-    <section class="section-plans">
+    <section id="plans" class="section-plans">
       <div class="row">
         <h2>Start eating healthy today</h2>
       </div>
       <div class="row">
-        <div class="col span-1-of-3">
+        <div class="col span-1-of-3 js--wp-3">
           <div class="plan-box">
             <div>
             <h3>Premium</h3>
